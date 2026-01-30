@@ -8,6 +8,7 @@ This project automatically generates a daily newsletter with the latest news and
 - Automated generation and storage
 - Scheduled execution using cron
 - Clean, readable newsletter format
+- Responsive web interface for easy reading
 
 ## Setup
 
@@ -17,9 +18,9 @@ This project automatically generates a daily newsletter with the latest news and
    cd pm-newsletter-automation
    ```
 
-2. Install dependencies (if any):
+2. Install dependencies:
    ```bash
-   npm install  # if there are Node.js dependencies
+   npm install
    ```
 
 3. Make sure you have web search capabilities configured in your environment.
@@ -52,6 +53,34 @@ Alternatively, you can use the following command to schedule it:
 # Run the following command to add the cron job
 (crontab -l 2>/dev/null; echo "0 9 * * * cd $(pwd) && node newsletter_generator.js") | crontab -
 ```
+
+## Web Interface
+
+### Running Locally
+
+To run the web interface locally:
+
+```bash
+npm run server
+```
+
+The website will be available at http://localhost:3000
+
+### Deploying to Vercel
+
+For public access, deploy to Vercel:
+
+1. Create a Vercel account at [https://vercel.com/signup](https://vercel.com/signup)
+2. Install Vercel CLI globally: `npm install -g vercel`
+3. Navigate to your project directory
+4. Login to Vercel: `vercel login`
+5. Deploy to Vercel: `vercel --prod`
+
+Alternatively, use Vercel's Git integration:
+1. Go to [https://vercel.com/import/git](https://vercel.com/import/git)
+2. Connect to your GitHub account
+3. Select the `pm-newsletter-automation` repository
+4. Vercel will automatically detect the project and deploy it
 
 ## Output
 
