@@ -1,0 +1,22 @@
+{
+  "name": "pm-newsletter-automation",
+  "version": "1.0.0",
+  "description": "Automated newsletter generator for Product Management news",
+  "main": "newsletter_generator.js",
+  "scripts": {
+    "start": "node newsletter_generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "product-management",
+    "newsletter",
+    "automation",
+    "news-aggregation"
+  ],
+  "author": "juliali0925",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "newsSources": [
+    "https://www.productplan.com/product-management-blog/",
+    "https://www.mindtheproduct.com/articles/",
+    "https://svpg.com/articles/",
+    "https://www.fastcompany.com/co-design/",
+    "https://techcrunch.com/category/podcasts/",
+    "https://www.lennysnewsletter.com/"
+  ],
+  "keywords": [
+    "product management",
+    "product manager",
+    "product strategy",
+    "product development",
+    "agile",
+    "scrum",
+    "lean",
+    "ux/ui",
+    "design thinking",
+    "innovation",
+    "startups",
+    "technology",
+    "AI",
+    "machine learning"
+  ],
+  "outputDirectory": "./newsletters",
+  "schedule": "0 9 * * *",
+  "emailSubject": "Daily Product Management Newsletter",
+  "rssFeed": false
+}
