@@ -5,6 +5,7 @@
   "main": "newsletter_generator.js",
   "scripts": {
     "start": "node newsletter_generator.js",
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +17,7 @@
   "author": "juliali0925",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.22.1",
     "fs": "^0.0.1-security",
     "path": "^0.12.7"
   }
